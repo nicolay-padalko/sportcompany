@@ -1,0 +1,6 @@
+[16-Nov-2019 10:31:42 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10
+[18-Nov-2019 06:14:42 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10
+[13-Dec-2019 19:26:26 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10
+[15-Dec-2019 19:59:02 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10
+[13-Jan-2020 21:42:29 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10
+[15-Jan-2020 22:51:53 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sportco/public_html/wp-content/themes/sportcompany/404.php on line 10

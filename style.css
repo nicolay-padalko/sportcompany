@@ -1,0 +1,795 @@
+/*!
+Theme Name: Sport Company
+Theme URI: http://underscores.me/
+Author: Nicolay Padalko
+Author URI: http://www.akulamotion.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: sportcompany
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Sport Company is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+/* especifico do thema */
+
+
+
+body {
+	font-family: cabin;
+	font-size: 18px;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	color: #fff;
+}
+
+
+.navbar {
+	background-color: #fa6930;
+	position: 150px;
+}
+
+
+.navbar .nav-link {
+	color: #fff;
+}
+
+.fa.fa-navicon {
+	color: white;
+}
+
+
+
+
+/*   -------------  Carousel ------------*/
+
+.carousel-inner img {
+	width: 80%;
+	height: 80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 10%;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 40px;
+	width: 40px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#253c99' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#253c99' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+
+.carousel-caption h3,
+.carousel-caption p {
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.carousel-caption h3 {
+	background: rgba(37, 61, 152, 0.6);
+	padding: 12px 24px;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+
+.carousel-caption p {
+	background: rgba(242, 101, 34, 0.6);
+	padding: 7px 10px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+}
+
+@media (min-width:800px) {
+	.carousel-caption p {
+		font-size: 24px;
+	}
+}
+
+/*   ------------- FIM  Carousel ------------*/
+
+/*   ------------- Programas ------------*/
+
+.dark-overlay {
+	position: absolute;
+	background-color: rgba(37, 60, 153, 0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+#programas {
+	position: relative;
+	min-height: 200px;
+	background-image: url('assets/img/bg-programas.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -300px;
+}
+
+#programas a {
+	color: #fff;
+}
+
+/*   -------------Fim  Programas ------------*/
+
+/*   ------------- Galeria ------------*/
+
+.galeria {
+	position: relative;
+}
+
+.caption {
+	font-size: 36px;
+	position: absolute;
+	top: 65%;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	background: rgba(242, 101, 34, 0.6);
+}
+
+.container .btn {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #253c99;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.container .btn:hover {
+	background-color: black;
+}
+
+/*   -------------Fim Galeria ------------*/
+
+/*   -------------Atividades  ------------*/
+
+.serv {
+	background-color: #fa6930;
+}
+
+.foto-serv img {
+	margin-top: -50px;
+}
+
+.about {
+	padding-top: 20px;
+}
+
+.contact {
+	background: #f26522;
+}
+
+.contact .fa {
+	font-size: 25px;
+}
+
+/*   ------------- Programas ------------*/
+
+.light-overlay {
+	position: absolute;
+	background-color: rgba(235, 157, 127, 0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#mural {
+	position: relative;
+	min-height: 200px;
+	background-image: url('assets/img/bg-atividades.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+}
+
+#mural h4,
+#mural h1 {
+	color: #253c99;
+}
+
+#mural img {
+	margin-top: -80px;
+}
+
+#dicas .card:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*   -------------Fim  Programas ------------*/
+
+#historia {
+	position: relative;
+	min-height: 250px;
+	background-image: url('assets/img/hist3.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -80px;
+}
+
+#historia a {
+	color: #fff;
+}
+
+.nshist {
+	padding-top: 150px;
+}
+
+.nshist h6 {
+	color: #253c99;
+}
+
+.foto-hist img {
+	margin-top: 50px;
+}
+
+.foto-histor img {
+	margin-top: 50px;
+}
+
+.historiaa {
+	background-color: #fa6930;
+}
+
+#condominio {
+	position: relative;
+	min-height: 240px;
+	background-image: url('assets/img/bg-atividades.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+	background-size: cover;
+}
+
+#condominio h4,
+#condominio h3,
+#condominio h1 {
+	color: #253c99;
+}
+
+#condominio img {
+	margin-top: -80px;
+}
+
+
+
+hr.style1 {
+	border-top: 2px solid #253c99;
+}
+
+/* seviços complementares */
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+	filter: grayscale(1) blur(3px);
+	-webkit-filter: grayscale(1) blur(3px);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.hovereffect h2 {
+	text-align: center;
+	position: relative;
+	font-size: 16px;
+	padding: 10px;
+	background: rgba(37, 61, 152, 0.6);
+}
+
+.hovereffect h1.info {
+	font-size: 20px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	border: 1px solid #fff;
+	margin: 20px 0 0 0;
+	background-color: rgba(242, 101, 34, 0.6);
+}
+
+.hovereffect h1.info:hover {
+	box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect h1.info,
+.hovereffect h2 {
+	-webkit-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	-webkit-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	color: #fff;
+}
+
+.hovereffect:hover h1.info,
+.hovereffect:hover h2 {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.light-overlay {
+	position: absolute;
+	background-color: rgba(235, 157, 127, 0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#complementares {
+	position: relative;
+	min-height: 200px;
+	background-image: url('assets/img/servicos.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: -50px;
+}
+
+#complementares h4,
+#complementares h1 {
+	color: #253c99;
+}
+
+#complementares img {
+	margin-top: 100px;
+}
+
+#condo {
+	position: relative;
+	min-height: 200px;
+	background-image: url('assets/img/condo.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -80px;
+}
+
+#condo a {
+	color: #fff;
+}
+
+.border img {
+	transition: .5s ease;
+}
+
+.border img:hover {
+	box-shadow: 0 0 0 10px #f293ff;
+	transition: .5s ease;
+}
+
+.border img {
+	border-top: 4px solid #f293ff;
+}
+
+.card-texto {
+	border: 10px solid #f293ff;
+	border-radius: 10px;
+}
+
+.border-ado img:hover {
+	box-shadow: 0 0 0 10px #fff000;
+	transition: .5s ease;
+}
+
+.card-texto-ado {
+	border: 10px solid #fff000;
+	border-radius: 10px;
+}
+
+.border-adult img:hover {
+	box-shadow: 0 0 0 10px #fa6930;
+	transition: .5s ease;
+}
+
+.card-texto-adult {
+	border: 10px solid #fa6930;
+	border-radius: 10px;
+}
+
+#voce {
+	position: relative;
+	min-height: 200px;
+	background-image: url('assets/img//voce.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -400px;
+}
+
+#voce a {
+	color: #fff;
+}
+
+
