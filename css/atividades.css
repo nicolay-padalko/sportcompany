@@ -1,0 +1,226 @@
+
+
+
+/* --------------------carousel ----------------*/
+
+
+.carousel-control-prev {
+    bottom: 90%;
+    left: -20px;
+}
+
+.carousel-control-next {
+    bottom: 90%;
+    right: -20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#253c99' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23#253c99' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* -------------------infantil -------------------*/
+.border img {
+    border-top: 6px solid #f293ff;
+   
+}
+
+.card-texto-inf {
+    border: 4px solid #f293ff;
+}
+
+.hovereffect-inf {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect-inf .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(75, 75, 75, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-inf:hover .overlay {
+    background-color: rgba(242, 147, 255, 0.4);
+}
+
+.hovereffect-inf img {
+    display: block;
+    position: relative;
+}
+
+.hovereffect-inf h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(30px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-inf:hover h2 {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+
+
+/* -------------------adolecente -------------------*/
+
+
+.border-adol img {
+    border-top: 6px solid #ffee00;
+}
+
+.card-texto-adol {
+    border: 4px solid #ffee00;
+}
+
+.hovereffect-adol {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect-adol .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(75, 75, 75, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-adol:hover .overlay {
+    background-color: rgba(255, 238, 0, 0.4);
+}
+
+.hovereffect-adol img {
+    display: block;
+    position: relative;
+}
+
+.hovereffect-adol h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+   
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(30px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-adol:hover h2 {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+
+/* -------------------adulto -------------------*/
+
+
+.border-adut img {
+    border-top: 6px solid #f26522;
+}
+
+.card-texto-adut {
+    border: 4px solid #f26522;
+}
+
+.hovereffect-adut {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect-adut .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(75, 75, 75, 0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-adut:hover .overlay {
+    background-color: rgba(242, 101, 34, 0.4);
+}
+
+.hovereffect-adut img {
+    display: block;
+    position: relative;
+}
+
+.hovereffect-adut h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(30px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffect-adut:hover h2 {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+
+
+
+
+
+/* --------------------------------*/
+
